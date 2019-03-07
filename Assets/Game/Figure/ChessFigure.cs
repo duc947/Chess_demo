@@ -16,20 +16,6 @@ public abstract class ChessFigure : MonoBehaviour
 
     public virtual bool isEight(int x, int y)
     {
-        //bool eight = true;
-        //switch (y % 2)
-        //{
-        //    case 0:
-        //        if ((x % 2) == 0) eight = true;
-        //        else eight = false;
-        //        break;
-        //    case 1:
-        //        if ((x % 2) == 0) eight = false;
-        //        else eight = true;
-        //        break;
-        //    default:
-        //        break;
-        //}
         return true;
     }
 
