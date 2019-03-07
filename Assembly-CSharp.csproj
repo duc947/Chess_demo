@@ -59,6 +59,7 @@
      <Compile Include="Assets\Game\Scripts\BoardManager.cs" />
      <Compile Include="Assets\Game\Scripts\ChessAI.cs" />
      <Compile Include="Assets\Game\Scripts\Load_Scenes.cs" />
+     <Compile Include="Assets\Game\Scripts\PieceMovement.cs" />
      <Compile Include="Assets\Game\Scripts\QuitOnClick.cs" />
      <Compile Include="Assets\Sample\Scripts\ActiveStateToggler.cs" />
      <Compile Include="Assets\Sample\Scripts\ApplicationManager.cs" />

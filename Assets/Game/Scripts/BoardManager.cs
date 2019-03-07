@@ -70,9 +70,6 @@ public class BoardManager : MonoBehaviour
         {
             Vector2 aiMove = new Vector2();
             Debug.Log(String.Format("Initial Values: x = {0}, y = {1}", aiMove.x, aiMove.y));
-            //selectedFigure = ai.SelectChessFigure();
-            //aiMove = ai.MakeMove(selectedFigure);
-            //Debug.Log("SelectedFigure" + String.Format("{0} - {1}", selectedFigure.CurrentX, selectedFigure.CurrentY));
 
             do
             {
@@ -356,6 +353,11 @@ public class BoardManager : MonoBehaviour
 
             ChessFigurePositions[selectedFigure.CurrentX, selectedFigure.CurrentY] = null;
             selectedFigure.transform.position = GetTileCenter(x, y);
+            // Vector3 movement = new Vector3();
+            // movement.Set (57, 0f, 0);
+            // movement = movement.normalized * 6f * Time.deltaTime;
+            // // selectedFigure.transform.Translate(movement * Time.deltaTime);
+            // selectedFigure.transform.position += (GetTileCenter(x, y) * Time.deltaTime);
             selectedFigure.SetPosition(x, y);
             ChessFigurePositions[x, y] = selectedFigure;
             isRedTurn = !isRedTurn;
@@ -430,6 +432,7 @@ public class BoardManager : MonoBehaviour
     
     private void SpawnAllChessFigures()
     {
+        //SpawnChessFigure(0, 2, 2);
         // Red  
         SpawnChessFigure(0, 0, 0);
         SpawnChessFigure(0, 0, 1);
@@ -440,7 +443,7 @@ public class BoardManager : MonoBehaviour
         SpawnChessFigure(0, 4, 1);
         SpawnChessFigure(0, 4, 2);
 
-        // Blue
+        // // Blue
         SpawnChessFigure(1, 4, 4);
         SpawnChessFigure(1, 4, 3);
         SpawnChessFigure(1, 3, 4);
